@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(243, 243, 244);
+    text-shadow: 0px 0px 20px #aaaaaa;
+
+    width: 100%;
+    height: 100vh;
+
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.top,
+div.time,
+div.bottom {
+    display: flex;
+    width: 100%;
+}
+
+/* Top of the screen */
+
+div.top {
+    height: 20vh;
+    /* border: 1px solid whitesmoke; */
+    justify-content: space-between;
+}
+
+div#crypto-el * {
+    /* border: 1px solid red; */
+    margin: 0;
+}
+
+div#crypto-el > div {
+    display: flex;
+    gap: 4px;
+    font-size: 1.2rem;
+    padding: 1px;
+    margin-bottom: 3px;
+}
+
+.crypto-heading {
+    font-size: 1.4rem;
+    padding-bottom: 7px;
+}
+
+.thumbnail {
+    width: 25px;
+    height: 25px;
+    margin-right: 3px;
+}
+
+
+div#weather-el * {
+    /* border: 1px solid magenta; */
+    margin: 0;
+    text-align: right;
+    /* padding: 3px; */
+}
+
+div#weather-el {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items:flex-start; */
+}
+
+div.temp {
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    align-items: flex-end;
+}
+
+img.icon {
+    align-self: flex-end;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+#temp-el {
+    font-size: 2.5rem;
+}
+
+#place-el {
+    font-size: 2rem;
+    padding: 0;
+    margin-top: -10px;
+}
+
+/* Middle Elements */
+
+div.time {
+    height: 30vh;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1#time-el {
+    letter-spacing: 1px;
+    font-size: 5rem;
+}
+
+p#date-el {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    font-size: 2.2rem;
+}
+
+div.time * {
+    /* border: 1px solid maroon; */
+    margin: 0;
+}
+
+/* Bottom Div Elements */
+
+div.bottom {
+    height: 10vh;
+    /* border: 1px solid red; */
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+p#background-image-author {
+    align-self: flex-end;
+}
+
+/* Error msgs */
+
+.error {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
